@@ -180,6 +180,14 @@ COPY --chown=$DOCKER_USER:$DOCKER_USER \
      --from=build \
      /azerothcore/env/dist/bin/worldserver /azerothcore/env/dist/bin/worldserver
 
+# Module runtime data (SQL files for mod-playerbots base/updates population).
+# Without this, the worldserver fails at startup with:
+#   "Directory /azerothcore/modules/mod-playerbots/data/sql/playerbots/base/ not exist"
+# and crashes (SIGSEGV) when Playerbots tries to access the un-populated DB.
+# Mirrors the db-import target which already COPYs `modules modules`.
+COPY --chown=$DOCKER_USER:$DOCKER_USER \
+     modules /azerothcore/modules
+
 VOLUME /azerothcore/env/dist/etc
 
 CMD ["worldserver"]
