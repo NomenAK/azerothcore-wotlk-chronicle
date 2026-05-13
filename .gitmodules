@@ -8,3 +8,21 @@
 [submodule "mod-autobalance"]
 	path = modules/mod-autobalance
 	url = https://github.com/NomenAK/mod-autobalance-chronicle
+[submodule "modules/mod-aoe-loot"]
+	path = modules/mod-aoe-loot
+	url = https://github.com/azerothcore/mod-aoe-loot.git
+[submodule "modules/mod-learn-spells"]
+	path = modules/mod-learn-spells
+	url = https://github.com/azerothcore/mod-learn-spells.git
+[submodule "modules/mod-quick-teleport"]
+	path = modules/mod-quick-teleport
+	url = https://github.com/azerothcore/mod-quick-teleport.git
+[submodule "modules/mod-instance-reset"]
+	path = modules/mod-instance-reset
+	url = https://github.com/azerothcore/mod-instance-reset.git
+[submodule "modules/mod-individual-xp"]
+	path = modules/mod-individual-xp
+	url = https://github.com/azerothcore/mod-individual-xp.git
+[submodule "modules/mod-skip-dk-starting-area"]
+	path = modules/mod-skip-dk-starting-area
+	url = https://github.com/azerothcore/mod-skip-dk-starting-area.git
