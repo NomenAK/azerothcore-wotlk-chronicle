@@ -41,3 +41,18 @@
 [submodule "modules/mod-emblem-transfer"]
 	path = modules/mod-emblem-transfer
 	url = https://github.com/azerothcore/mod-emblem-transfer.git
+[submodule "modules/mod-ah-bot"]
+	path = modules/mod-ah-bot
+	url = https://github.com/azerothcore/mod-ah-bot.git
+[submodule "modules/mod-cfbg"]
+	path = modules/mod-cfbg
+	url = https://github.com/azerothcore/mod-cfbg.git
+[submodule "modules/mod-solo-lfg"]
+	path = modules/mod-solo-lfg
+	url = https://github.com/azerothcore/mod-solo-lfg.git
+[submodule "modules/mod-solocraft"]
+	path = modules/mod-solocraft
+	url = https://github.com/azerothcore/mod-solocraft.git
+[submodule "modules/mod-dynamic-xp"]
+	path = modules/mod-dynamic-xp
+	url = https://github.com/azerothcore/mod-dynamic-xp.git
