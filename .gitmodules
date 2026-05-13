@@ -53,3 +53,21 @@
 [submodule "modules/mod-dynamic-xp"]
 	path = modules/mod-dynamic-xp
 	url = https://github.com/azerothcore/mod-dynamic-xp.git
+[submodule "modules/mod-pvpstats-announcer"]
+	path = modules/mod-pvpstats-announcer
+	url = https://github.com/azerothcore/mod-pvpstats-announcer.git
+[submodule "modules/mod-fireworks-on-level"]
+	path = modules/mod-fireworks-on-level
+	url = https://github.com/azerothcore/mod-fireworks-on-level.git
+[submodule "modules/mod-congrats-on-level"]
+	path = modules/mod-congrats-on-level
+	url = https://github.com/azerothcore/mod-congrats-on-level.git
+[submodule "modules/mod-1v1-arena"]
+	path = modules/mod-1v1-arena
+	url = https://github.com/azerothcore/mod-1v1-arena.git
+[submodule "modules/mod-duel-reset"]
+	path = modules/mod-duel-reset
+	url = https://github.com/azerothcore/mod-duel-reset.git
+[submodule "modules/mod-costumes"]
+	path = modules/mod-costumes
+	url = https://github.com/azerothcore/mod-costumes.git
