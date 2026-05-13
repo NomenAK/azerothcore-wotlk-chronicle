@@ -2,3 +2,9 @@
 	path = modules/mod-playerbots
 	url = https://github.com/NomenAK/mod-playerbots-chronicle.git
 	branch = chronicle/main
+[submodule "mod-ale"]
+	path = modules/mod-ale
+	url = https://github.com/NomenAK/mod-ale-chronicle
+[submodule "mod-autobalance"]
+	path = modules/mod-autobalance
+	url = https://github.com/NomenAK/mod-autobalance-chronicle
