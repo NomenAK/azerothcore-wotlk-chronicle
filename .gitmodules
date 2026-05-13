@@ -44,9 +44,6 @@
 [submodule "modules/mod-ah-bot"]
 	path = modules/mod-ah-bot
 	url = https://github.com/azerothcore/mod-ah-bot.git
-[submodule "modules/mod-cfbg"]
-	path = modules/mod-cfbg
-	url = https://github.com/azerothcore/mod-cfbg.git
 [submodule "modules/mod-solo-lfg"]
 	path = modules/mod-solo-lfg
 	url = https://github.com/azerothcore/mod-solo-lfg.git
