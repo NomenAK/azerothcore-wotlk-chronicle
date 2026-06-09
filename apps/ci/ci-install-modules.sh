@@ -74,7 +74,9 @@ git clone --depth=1 --branch=master https://github.com/azerothcore/mod-phased-du
 # git clone --depth=1 --branch=master https://github.com/azerothcore/mod-playerbots modules/mod-playerbots
 git clone --depth=1 --branch=master https://github.com/azerothcore/mod-pocket-portal modules/mod-pocket-portal
 git clone --depth=1 --branch=master https://github.com/azerothcore/mod-premium modules/mod-premium
-git clone --depth=1 --branch=main   https://github.com/azerothcore/mod-progression-system.git modules/mod-progression-system
+# mod-progression-system — PINNED (D022 §A4: module SQL is non-reversible; no floating main).
+git clone --branch=main https://github.com/azerothcore/mod-progression-system.git modules/mod-progression-system
+git -C modules/mod-progression-system checkout 41e56e4a86d6cc0679fb9e0cca6c09ab7b240abc
 git clone --depth=1 --branch=master https://github.com/azerothcore/mod-promotion-azerothcore modules/mod-promotion-azerothcore
 git clone --depth=1 --branch=master https://github.com/azerothcore/mod-ptr-template modules/mod-ptr-template
 git clone --depth=1 --branch=master https://github.com/azerothcore/mod-pvp-quests modules/mod-pvp-quests
