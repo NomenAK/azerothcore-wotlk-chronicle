@@ -5,9 +5,11 @@
 [submodule "mod-ale"]
 	path = modules/mod-ale
 	url = https://github.com/NomenAK/mod-ale-chronicle
+	branch = master
 [submodule "mod-autobalance"]
 	path = modules/mod-autobalance
 	url = https://github.com/NomenAK/mod-autobalance-chronicle
+	branch = master
 [submodule "modules/mod-aoe-loot"]
 	path = modules/mod-aoe-loot
 	url = https://github.com/azerothcore/mod-aoe-loot.git
