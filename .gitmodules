@@ -73,3 +73,7 @@
 [submodule "modules/mod-costumes"]
 	path = modules/mod-costumes
 	url = https://github.com/azerothcore/mod-costumes.git
+[submodule "modules/mod-multibot-bridge"]
+	path = modules/mod-multibot-bridge
+	url = https://github.com/NomenAK/mod-multibot-bridge.git
+	branch = main
