@@ -1,0 +1,79 @@
+[submodule "modules/mod-playerbots"]
+	path = modules/mod-playerbots
+	url = https://github.com/NomenAK/mod-playerbots-chronicle.git
+	branch = chronicle/main
+[submodule "mod-ale"]
+	path = modules/mod-ale
+	url = https://github.com/NomenAK/mod-ale-chronicle
+	branch = master
+[submodule "mod-autobalance"]
+	path = modules/mod-autobalance
+	url = https://github.com/NomenAK/mod-autobalance-chronicle
+	branch = master
+[submodule "modules/mod-aoe-loot"]
+	path = modules/mod-aoe-loot
+	url = https://github.com/azerothcore/mod-aoe-loot.git
+[submodule "modules/mod-learn-spells"]
+	path = modules/mod-learn-spells
+	url = https://github.com/azerothcore/mod-learn-spells.git
+[submodule "modules/mod-quick-teleport"]
+	path = modules/mod-quick-teleport
+	url = https://github.com/azerothcore/mod-quick-teleport.git
+[submodule "modules/mod-instance-reset"]
+	path = modules/mod-instance-reset
+	url = https://github.com/azerothcore/mod-instance-reset.git
+[submodule "modules/mod-individual-xp"]
+	path = modules/mod-individual-xp
+	url = https://github.com/azerothcore/mod-individual-xp.git
+[submodule "modules/mod-skip-dk-starting-area"]
+	path = modules/mod-skip-dk-starting-area
+	url = https://github.com/azerothcore/mod-skip-dk-starting-area.git
+[submodule "modules/mod-starter-guild"]
+	path = modules/mod-starter-guild
+	url = https://github.com/azerothcore/mod-starter-guild.git
+[submodule "modules/mod-transmog"]
+	path = modules/mod-transmog
+	url = https://github.com/azerothcore/mod-transmog.git
+[submodule "modules/mod-account-mounts"]
+	path = modules/mod-account-mounts
+	url = https://github.com/azerothcore/mod-account-mounts.git
+[submodule "modules/mod-account-achievements"]
+	path = modules/mod-account-achievements
+	url = https://github.com/azerothcore/mod-account-achievements.git
+[submodule "modules/mod-emblem-transfer"]
+	path = modules/mod-emblem-transfer
+	url = https://github.com/azerothcore/mod-emblem-transfer.git
+[submodule "modules/mod-ah-bot"]
+	path = modules/mod-ah-bot
+	url = https://github.com/azerothcore/mod-ah-bot.git
+[submodule "modules/mod-solo-lfg"]
+	path = modules/mod-solo-lfg
+	url = https://github.com/azerothcore/mod-solo-lfg.git
+[submodule "modules/mod-solocraft"]
+	path = modules/mod-solocraft
+	url = https://github.com/azerothcore/mod-solocraft.git
+[submodule "modules/mod-dynamic-xp"]
+	path = modules/mod-dynamic-xp
+	url = https://github.com/azerothcore/mod-dynamic-xp.git
+[submodule "modules/mod-pvpstats-announcer"]
+	path = modules/mod-pvpstats-announcer
+	url = https://github.com/azerothcore/mod-pvpstats-announcer.git
+[submodule "modules/mod-fireworks-on-level"]
+	path = modules/mod-fireworks-on-level
+	url = https://github.com/azerothcore/mod-fireworks-on-level.git
+[submodule "modules/mod-congrats-on-level"]
+	path = modules/mod-congrats-on-level
+	url = https://github.com/azerothcore/mod-congrats-on-level.git
+[submodule "modules/mod-1v1-arena"]
+	path = modules/mod-1v1-arena
+	url = https://github.com/azerothcore/mod-1v1-arena.git
+[submodule "modules/mod-duel-reset"]
+	path = modules/mod-duel-reset
+	url = https://github.com/azerothcore/mod-duel-reset.git
+[submodule "modules/mod-costumes"]
+	path = modules/mod-costumes
+	url = https://github.com/azerothcore/mod-costumes.git
+[submodule "modules/mod-multibot-bridge"]
+	path = modules/mod-multibot-bridge
+	url = https://github.com/NomenAK/mod-multibot-bridge.git
+	branch = main

@@ -81,14 +81,12 @@ ARG CACHEBUST=1
 WORKDIR /azerothcore/build
 
 RUN --mount=type=cache,target=/ccache,sharing=locked \
-    # This may seem silly (and it is), but AzerothCore wants the git repo at
-    # build time. The git repo is _huge_ and it's not something that really
-    # makes sense to mount into the container, but this way we can let the build
-    # have the information it needs without including the hundreds of megabytes
-    # of git repo into the container.
-    --mount=type=bind,target=/azerothcore/.git,source=.git \
-    git config --global --add safe.directory /azerothcore \
-    && cmake /azerothcore \
+    # Chronicle: subtree → submodule migration removed direct .git access at build.
+    # Use -DWITHOUT_GIT=1 (genrev.cmake natively supported) so rev_hash falls back
+    # to "unknown" / "Archived" branch in the binary version string. The pinned
+    # SHA is tracked in docs/upstream-pins.md (NomenAK/Chronicle).
+    cmake /azerothcore \
+       -DWITHOUT_GIT="1"                               \
        -DCMAKE_INSTALL_PREFIX="/azerothcore/env/dist"  \
        -DAPPS_BUILD="all"                              \
        -DTOOLS_BUILD="$CTOOLS_BUILD"                   \
@@ -181,6 +179,14 @@ ENV AC_CLOSE_IDLE_CONNECTIONS=0
 COPY --chown=$DOCKER_USER:$DOCKER_USER \
      --from=build \
      /azerothcore/env/dist/bin/worldserver /azerothcore/env/dist/bin/worldserver
+
+# Module runtime data (SQL files for mod-playerbots base/updates population).
+# Without this, the worldserver fails at startup with:
+#   "Directory /azerothcore/modules/mod-playerbots/data/sql/playerbots/base/ not exist"
+# and crashes (SIGSEGV) when Playerbots tries to access the un-populated DB.
+# Mirrors the db-import target which already COPYs `modules modules`.
+COPY --chown=$DOCKER_USER:$DOCKER_USER \
+     modules /azerothcore/modules
 
 VOLUME /azerothcore/env/dist/etc
 
